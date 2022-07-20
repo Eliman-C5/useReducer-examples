@@ -1,23 +1,17 @@
-import logo from './logo.svg';
-import './App.css';
+import ChangingMenu from './components/ChangingMenu';
+import Counter from './components/Counter';
+import DynamicMap from './components/dynamicMap/DynamicMap';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h1 style={{textAlign: 'center'}}>useReducer Examples</h1>
+      <hr />
+      <ChangingMenu />
+      <hr />
+      <Counter />
+      <hr />
+      <DynamicMap />
     </div>
   );
 }
